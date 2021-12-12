@@ -1,9 +1,9 @@
 # code copied from https://github.com/lh64/SCLC_dynamics/blob/master/four_state_sclc.py
 # this won't work until I install BIONETGEN
 
-from pysb import *
-from pysb.simulator import ScipyOdeSimulator
-from pysb.simulator import BngSimulator
+from pysb_practice import *
+from pysb_practice.simulator import ScipyOdeSimulator
+from pysb_practice.simulator import BngSimulator
 import numpy as np
 import matplotlib.pyplot as plt
 
