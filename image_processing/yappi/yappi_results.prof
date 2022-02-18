@@ -1,0 +1,45 @@
+version: 1
+creator: yappi
+pid: 20957
+cmd:  /Users/jonathanlifferth/PycharmProjects/Research_Analyst_Playground/image_processing/yappi_practice.py
+part: 1
+
+events: Ticks
+
+fl=(0) /Users/jonathanlifferth/PycharmProjects/Research_Analyst_Playground/image_processing/yappi_practice.py
+fl=(1) /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py
+fl=(2) /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py
+fl=(3) /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py
+
+fn=(0) a /Users/jonathanlifferth/PycharmProjects/Research_Analyst_Playground/image_processing/yappi_practice.py:6
+fn=(1) Random.randint /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py:334
+fn=(2) Random.randrange /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py:290
+fn=(3) Random._randbelow_with_getrandbits /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/random.py:237
+
+fl=(0)
+fn=(0)
+6 43528
+cfl=(1)
+cfn=(1)
+calls=10000 0
+0 189189
+
+fl=(1)
+fn=(1)
+334 40019
+cfl=(2)
+cfn=(2)
+calls=10000 0
+0 149170
+
+fl=(2)
+fn=(2)
+290 43387
+cfl=(3)
+cfn=(3)
+calls=10000 0
+0 105782
+
+fl=(3)
+fn=(3)
+237 63595
