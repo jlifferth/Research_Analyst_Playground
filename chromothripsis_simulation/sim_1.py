@@ -37,9 +37,10 @@ def run_chromothripsis(gene_list, genome_str, _print=False):
     # shatter genome into fragments and shuffle randomly
     fragments = genome_with_break_indices.split('_')
     random.shuffle(fragments)
+    shuffled_fragments = fragments
 
     # allow fragments to invert
-    inverted_fragments = [fragment[::[-1, 1][random.randrange(2)]] for fragment in fragments]
+    inverted_fragments = [fragment[::[-1, 1][random.randrange(2)]] for fragment in shuffled_fragments]
 
     # allow fragments to be lost to the cell
     lost_fragments = []
@@ -62,7 +63,7 @@ def run_chromothripsis(gene_list, genome_str, _print=False):
         print('Fragments')
         print(fragments)
         print('Shuffled fragments')
-        print(fragments)
+        print(shuffled_fragments)
         print('Inverted Fragments')
         print(inverted_fragments)
         print('Lost_fragments')
@@ -75,4 +76,4 @@ def run_chromothripsis(gene_list, genome_str, _print=False):
     return new_genome
 
 
-# run_chromothripsis(gene_list=genes, genome_str=genome)
+run_chromothripsis(gene_list=genes, genome_str=genome, _print=True)
