@@ -1,0 +1,7 @@
+1 - chromosome selection
+2 - breakpoint count
+3 - breakpoint indices
+4 - fragment loss
+5 - fragment inversion
+6 - fragment shuffling
+7 - fragment recombination
